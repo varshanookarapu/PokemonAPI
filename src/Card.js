@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import tachyons from "tachyons";
 import card from "./card.css";
-import Pokemon from "pokemon-images";
+//import Pokemon from "pokemon-images";
 
 export default function Card() {
   const [num, setNum] = useState();
@@ -11,6 +10,7 @@ export default function Card() {
     name: "NA",
     height: "NA",
     weight: "NA",
+    abilities: [],
   });
 
   //const [abilities, setAbilities] = useState("NA");
@@ -36,8 +36,10 @@ export default function Card() {
       setPokemon(res.data);
       console.log(res.data.name);
     }
-    getData();
-  });
+    if (num) {
+      getData();
+    }
+  }, [num]);
 
   return (
     <div>
@@ -61,6 +63,15 @@ export default function Card() {
           <h4>Height: {pokemon.height}</h4>
           <h4>Weight: {pokemon.weight}</h4>
           <h4>Abilities: </h4>
+          {pokemon.abilities.length ? (
+            <div>
+              {pokemon.abilities.map(({ ability }) => (
+                <div key={ability.name}>{ability.name}</div>
+              ))}
+            </div>
+          ) : (
+            <div>No Abilities</div>
+          )}
         </div>
 
         <div className="tc bg-washed-green dib br4 pa5 ma2 grow bw2 shadow-5 i w200 h200">

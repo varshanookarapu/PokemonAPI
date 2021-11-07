@@ -43,7 +43,7 @@ export default function Card() {
 
   return (
     <div>
-      <h1>Poke Poke Pokemons</h1>
+      <h1 style={{ color: "beige" }}>Poke Poke Pokemons</h1>
 
       <input
         className="tc bg-washed-red dib w5 h3 br4 grow shadow-2 -m b"
@@ -54,9 +54,10 @@ export default function Card() {
         }}
       />
 
+      <h2 className="pa4" style={{ color: "beige" }}>
+        I have selected the pokemon Card number {num}
+      </h2>
       <div className="cardbox">
-        <h2>I have selected the pokemon Card number {num}</h2>
-
         <div className="tc bg-washed-green dib br4 pa5 ma2 grow bw2 shadow-5 i">
           <h3>POKEMON</h3>
           <h4>Name: {pokemon.name}</h4>
@@ -75,7 +76,7 @@ export default function Card() {
         </div>
 
         <div className="tc bg-washed-green dib br4 pa5 ma2 grow bw2 shadow-5 i w200 h200">
-          <img src={pokemon.sprites?.back_default} />
+          <img src={pokemon.sprites?.back_default} className="w200 h200" />
         </div>
       </div>
     </div>

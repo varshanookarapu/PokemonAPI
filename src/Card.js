@@ -44,7 +44,7 @@ export default function Card() {
   return (
     <div>
       <h1 style={{ color: "beige" }}>Poke Poke Pokemons</h1>
-
+      <h2 style={{ color: "beige" }}>Please type in a number:</h2>
       <input
         className="tc bg-washed-red dib w5 h3 br4 grow shadow-2 -m b"
         type="text"

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/varshanookarapu/PokemonAPI.git/static/css/main.ffb8ef52.chunk.css",
-    "main.js": "/varshanookarapu/PokemonAPI.git/static/js/main.3deec937.chunk.js",
-    "main.js.map": "/varshanookarapu/PokemonAPI.git/static/js/main.3deec937.chunk.js.map",
+    "main.js": "/varshanookarapu/PokemonAPI.git/static/js/main.0c7442fb.chunk.js",
+    "main.js.map": "/varshanookarapu/PokemonAPI.git/static/js/main.0c7442fb.chunk.js.map",
     "runtime-main.js": "/varshanookarapu/PokemonAPI.git/static/js/runtime-main.e14beb1c.js",
     "runtime-main.js.map": "/varshanookarapu/PokemonAPI.git/static/js/runtime-main.e14beb1c.js.map",
     "static/css/2.6d7c7915.chunk.css": "/varshanookarapu/PokemonAPI.git/static/css/2.6d7c7915.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.6d7c7915.chunk.css",
     "static/js/2.3ef812e7.chunk.js",
     "static/css/main.ffb8ef52.chunk.css",
-    "static/js/main.3deec937.chunk.js"
+    "static/js/main.0c7442fb.chunk.js"
   ]
 }
